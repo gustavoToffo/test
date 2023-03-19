@@ -6,8 +6,7 @@ sequenceDiagram
     participant server
 
     form-->>browser: Button on form is clicked. 
-    activate server
-    server-->>browser: HTML document
+    browser-->>server: Browser sends the form input to server
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
