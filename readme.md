@@ -1,11 +1,8 @@
-yeehaw
+```mermaid
 
-#hello
+flowchart TD;
 
-#hey there
-
-#howdy
-
-#ho ho
-
-butter
+A-->B;
+A-->C;
+B-->D;
+C-->D;
