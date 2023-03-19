@@ -3,7 +3,9 @@
 sequenceDiagram
     participant browser
     participant server
-
+    participant form
+    
+    form->>browser: POST form input
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
