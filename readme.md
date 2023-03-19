@@ -1,8 +1,5 @@
 ```mermaid
 
-flowchart TD;
-
-A-->B;
-A-->C;
-B-->D;
-C-->D;
+sequenceDiagram
+  participant browser
+  participant server 
