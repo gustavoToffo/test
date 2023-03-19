@@ -5,7 +5,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    form-->>browser-->>server
+    form-->>browser: Button on form is clicked. 
     activate server
     server-->>browser: HTML document
     deactivate server
