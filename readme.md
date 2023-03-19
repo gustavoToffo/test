@@ -6,6 +6,7 @@ sequenceDiagram
     participant server
 
     form-->>browser: Button on form is clicked. 
+    activate server
     browser-->>server: Browser sends the form input to server
     deactivate server
 
