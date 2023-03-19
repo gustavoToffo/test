@@ -1,6 +1,9 @@
 ```mermaid
 
-graph LR;
-  Form-->|Click on submit button|Browser;
-  Browser-->|POST: Send input|Server;
-  Server-->|Respond with 302/URL redirect|Browser;
+sequenceDiagram
+  participant Form
+  participant Browser
+  participant Server
+  Form->>+Browser: Click "Submit"
+  Browser->>+Server: POST form data
+  Server-->>-Browser: Respond with 302/URL redirect
