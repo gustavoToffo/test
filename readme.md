@@ -1,10 +1,11 @@
 ```mermaid
 
 sequenceDiagram
+    participant form
     participant browser
     participant server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    form->>browser>>server
     activate server
     server-->>browser: HTML document
     deactivate server
